@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
@@ -82,6 +82,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+
+        {/* ── The Malaysian Info Hub Banner ── */}
+        <a
+          href="https://www.themalaysianinfo.online"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"6px",width:"100%",background:"rgba(100,0,0,0.28)",borderTop:"1px solid rgba(180,40,40,0.2)",padding:"10px 16px",fontSize:"11px",color:"rgba(255,255,255,0.42)",textDecoration:"none"}}
+        >
+          <span>&#x1F1F2;&#x1F1FE;</span>
+          <strong style={{color:"rgba(240,110,110,0.85)",fontWeight:600,fontStyle:"normal"}}>The Malaysian Info</strong>
+          <span>&middot;</span>
+          <span>Terokai 27 alatan percuma lagi &#x2192;</span>
+        </a>
       </body>
     </html>
   );
